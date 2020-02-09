@@ -1,0 +1,57 @@
+#include <stdio.h> //pointer
+int main(){
+    int x = 100; //number %d
+    int a = 0144; //number %o ฐาน8
+    int b = 0x64; //16 %h ฐาน16
+    // printf("x = %d\n" , x);
+    // printf("reference of x = %lu\n" , &x); //&x ส่งreference ของx
+    // printf("reference of x = %p\n", &x); //%p ฐาน 16 //00 0x
+
+    // int number[] = {7, 8, 9, 10, 11; //กำหนดขนาดตัวแปรก่อนเสมอไม่งั้นไม่ผ่านบรรทัดนี้คือ5
+    // int number[100]; //จองไว้100ช่อง
+    // int number[5] 
+    // number[1000] = 200;
+    // printf("index 3 = %d" , number[3000]);
+    // printf("reference of &number[3] = %p\n", &number[3]); //pointeraddress
+    // printf("reference of &number[0] = %p\n", &number[0]);   
+    // printf("reference of number = %p\n", &number + 3);  //address
+    
+    // int number[] = {1 ,2 , 3, 4 ,5 ,6};
+    // int ptr = &x;  //ชี้ address assign address to pointer //ประกาศต้องมี
+    // int *arrPtr;
+    // arrPtr = number; //เรียกตัวแปรไม่ต้องมี*
+    // arrPtr += 3; //เก็บค่า0c +ตำแหน่งขนาดที่เก็บตัวแปรไปเรื่อยๆ
+    // *arrPtr += 3; //address 0c ค่า 4 แล้ว+3 = 7 assign กลับที่ตำแหน่ง 0c
+    // printf("arrPtr = %p , *arrPtr = %d" , arrPtr , *arrPtr);
+
+    // int number[] = {1 ,2 , 3, 4 ,5 ,6};
+    // for (int *ptr = number; ptr < &number[4]; ptr++)
+    // {
+    //     printf("[%p] = %d\n" , ptr , *ptr);
+    // }
+    // printf("\n");
+    // int *ptr2 = number;
+    // for(int i = 0; i< 5; i++){
+    //     printf("[%p] = %d\n" , ptr2 + i , *(ptr2 + i)); //work unary before binary
+    // }
+    
+    // char input[100];
+    // int count = 0;
+    // char c;
+    // while ((c = getchar()) != '\n') //ปิด\0เอง char arr
+    // {
+    //     input[count] = c;
+    //     ++count;
+    // }
+    // input[count] = '\0';
+    // for (char *cPtr = input; *cPtr != '\0' ;cPtr++)
+    // {
+    //     printf("%c\n" , *cPtr);
+    // }
+
+    char s[100];
+    int i;
+    char c;
+    scanf("%d=%c=%s", &i, &c, s); //รับpointer ส่งaddress //array ไม่ต้องมี&
+    printf("%d--%c--%s", i, c, s);
+}
