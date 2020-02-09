@@ -1,0 +1,50 @@
+#include<stdio.h> //fgets,ifelse,whileloop,forloop
+#include<stdlib.h>
+char name[20] ; //จองช่องเก็บไว้20
+char n[5] ; //จองช่องเก็บไว้5
+int main {
+    //printf("Enter : ") ;
+    //gets(name) ; 
+    //fgets(name, 20, stdin) ; //รับค่าตัวแปรname
+    //printf("name =%s \n",name) 
+
+    //fgets(n, 5, stdin) ; //รับค่าตัวแปรn
+    //int i = atoi(n) ; //เปลี่ยนเป็นค่าint
+    //getchar(c) ;
+    //double d = atof(n) ; //เปลี่ยนเป็นค่าflaot 
+    //long l = atol(n) ; //เปลี่ยนเป็นค่า long 
+    //123\n\0 // \nขึ้นบรรทัดใหม่ \0ช่องว่าง
+    //printf("n= %s ,i = %d",n,i) ;
+
+    //puts(n) ;
+    //putchar(100) ; //putchar('h') ;
+
+    //int found = 0 ;
+    //float isIn = 0.0 ;
+    //char isExist = '\0' ;
+    //fgets(n, 5,stdin) ; //รับค่าจากตัวแปร n 
+    //int i = atoi(n) ; //เปลี่ยนเป็นค่า int
+    //if(i > 0 && i < 20 ) ; { //&&และ
+    //    printf("if\n") ; 
+    //}
+    //else if (i < 100 || found && isExist){ //||หรือ
+    //    printf("else if\n") ;
+    //}
+    //else if(i >= 'A' && i <= '2'){
+    //    printf("else if 2\n") ;
+    //}
+    //else {
+    //    printf("%d\n",i>0) ;
+    //}
+    fgets(n, 5, stdin) ; //รับค่าจากตัวแปรn
+    int i = atoi(n) ;
+
+    //int count = 0 ; //กำหนดตัวแปรนอกลูป
+    //while (count < i) {
+    //    printf("%d\n", count) ;
+    //    count++ ; //เหมือนกับcount+=1
+    //}
+    for(int j = 0; j < i ; j++){
+        printf("%d\n",j) ;
+    }
+}
