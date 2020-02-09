@@ -1,0 +1,20 @@
+#include<stdio.h> //typeของตัวแปร
+#define for 20 
+int f ;
+int main(){
+    int a = 10; // -2100000000 -2100000000
+    unsigned long long b = 400000000 ;
+
+
+    flaot c = 10.22 ; //ทศนิยม 
+    double d = 111.112; //รับจุดทศนิยมเยอะๆ 
+
+    char e = '\0' ; //ช่องว่าง
+    char name[] = "pim" ;
+
+    //printf("%f %lf %c %s",c, d, e, name) ;
+    int ans = a + c + 200 ;
+    flaot ans = a + c + e ;
+
+    printf("%d\n%f", ans1,ans2) ;
+}
