@@ -1,0 +1,20 @@
+#include <stdio.h> //function
+int x ;
+int addTen (int x) { //addtenชื่อfunction ประกาศตัวแปร x
+    x+= 10 ;
+    return x ; //รีเทินค่าx กลับไป
+}
+int addTwenty() ; //addTwentyชื่อfunction ไม่มีการประกาศตัวแปรเสร็จแล้วเปลี่ยนค่าในglobal
+int x = 2000 ;
+int main() {
+    //int x ;
+    int x = 90 ; 
+    int y = addTen(x) ; //function
+    printf("addTen in main = %d\n", y) ;
+    printf("addTwenty in main = %d\n", addTwenty()) ;
+}
+int addTwenty() {
+    x += 20 ;
+    return x ;
+}
+
