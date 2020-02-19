@@ -1,0 +1,31 @@
+การทำ git ver2.
+เริ่มจากการนำไฟล์เก่ามาทำด้วยวิธีการโคลน
+- git clone ตามด้วยลิ้งค์ของgit อันเก่า 
+ซึ่งอย่าลืมเปลี่ยน working directory โดยใช้การ cd ชื่อโฟลเดอร์นั้นๆ
+วิธีการสร้าง branch
+- git branch ตามด้วยชื่อที่จะตั้ง เช่นตั้งชื่อว่า feature
+-สร้างเพื่อไม่ให้ปนกัน และแยกส่วนพัฒนา
+วิธีการตรวจสอบ branch 
+- git branch (จะเห็นว่ามี* อยู่หน้าชื่อที่ตั้ง)
+วิธีการเปลี่ยน branch ไปที่ feature
+- git checkout feature
+การ Merge แบบ ไม่มี conflict
+-เพิ่มไฟล์ 2อัน คือ feature1.txt --> branch feature  ,master1.txt --> branch master
+-และต้องเปลี่ยน branch --> git checkout feature 
+-เพิ่มไฟล์ feature1.txt แล้ว
+- เช็คโดย git status (สังเกตบรรทัดแรกจะบอกว่าอยู่ branch ไหนอยู่)
+        - add เข้าไปโดย git add ตามด้วยชื่อไฟล์ คือ feature1.txt
+        - commit ไฟล์เพื่อเก็บ โดย  git commit -m "ตามด้วยชื่อที่เราจะตั้ง"
+เสร็จแล้วออกโดย git checkout master ไฟล์เมื่อกี้จะหายไป
+-เพิ่มอีกไฟล์ master1.txt แล้ว
+ - ทำเหมือนเมื่อกี้ คือ - git status
+         - git add ตามด้วยชื่อที่จะadd
+         - git commit -m "ตามด้วยชื่อที่เราจะตั้ง"
+- วิธีการดูโดยใช้ --> git log --all --decorate --oneline --graph จะมี 2 อันที่ทำเมื่อกี้ คือ master กับ feature
+ -การ push master
+        - เปลี่ยน โดย --> git checkout master
+        - ดู โดย --> git log --all --decorate --oneline --graph
+        - push โดย --> git push origin master
+        - ดูอีกครั้ง เหมือนเดิมคือ --> git log --all --decorate --oneline --graph
+ - การ push feature 
+        ทำเหมือน การ push master แค่เปลี่ยน master เป็น feature
